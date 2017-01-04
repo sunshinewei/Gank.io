@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+        <item
+            android:id="@+id/menu_main_all"
+            android:icon="@drawable/ic_more_grey"
+            android:title="@string/all" />
+
+        <item
+            android:id="@+id/menu_main_android"
+            android:icon="@drawable/ic_global_menu_news"
+            android:title="@string/android" />
+        <item
+            android:id="@+id/menu_main_ios"
+            android:icon="@drawable/ic_global_menu_direct"
+            android:title="@string/main_ios" />
+        <item
+            android:id="@+id/menu_main_vedio"
+            android:icon="@drawable/ic_global_menu_likes"
+            android:title="@string/vedio" />
+        <item
+            android:id="@+id/menu_main_ui"
+            android:icon="@drawable/ic_global_menu_popular"
+            android:title="@string/ui" />
+        <item
+            android:id="@+id/menu_main_love"
+            android:icon="@drawable/ic_global_menu_feed"
+            android:title="@string/love" />
+        <item
+            android:id="@+id/menu_main_more"
+            android:icon="@drawable/ic_heart_outline_grey"
+            android:title="@string/more" />
+    </group>
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/menu_about"
+            android:title="About" />
+    </group>
+</menu>

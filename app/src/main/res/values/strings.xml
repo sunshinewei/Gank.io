@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlowingDrawer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_profile_photo">https://avatars1.githubusercontent.com/u/6947495?v=3&amp;s=460</string>
+    <string name="main_ios">ios</string>
+    <string name="vedio">休息视频</string>
+    <string name="ui">前端</string>
+    <string name="love">福利</string>
+    <string name="more">拓展资源</string>
+    <string name="all">所有</string>
+    <string name="android">android</string>
+    <string name="per_info">个人信息</string>
+    <string name="tv_main_toolbar">首页</string>
+    <string name="tv_show_info">详情信息</string>
+
+</resources>

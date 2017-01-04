@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="style_color_primary">#2d5d82</color>
+    <color name="style_color_primary_dark">#21425d</color>
+    <color name="style_color_accent">#01bcd5</color>
+    <color name="fab_color_pressed">#007787</color>
+    <color name="fab_color_shadow">#44000000</color>
+    <color name="text_like_counter">#2b5a83</color>
+    <color name="paint_color">#dddddd</color>
+
+    <!--紫色-->
+    <color name="deep_color_most">#7a08fa</color>
+    <color name="deep_color_more">#a82ffc</color>
+    <color name="deep_color_much">#c264fe</color>
+    <color name="deep_color_less">#f8ecfd</color>
+
+    <!--红色-->
+    <color name="red_color_most">#c9182b</color>
+    <color name="red_color_more">#44c662</color>
+    <color name="red_color_much">#e3f3ac</color>
+    <color name="red_color_less">#f23a3a</color>
+
+    <!--咖啡色-->
+    <color name="brown_color_most">#700961</color>
+    <color name="brown_color_more">#b80d57</color>
+    <color name="brown_color_much">#e03e36</color>
+    <color name="brown_color_less">#ff7c38</color>
+
+    <!--绿色-->
+    <color name="green_color_most">#0eb29a</color>
+    <color name="green_color_more">#f5fdff</color>
+    <color name="green_color_much">#ddf0c2</color>
+    <color name="green_color_less">#8c999a</color>
+</resources>

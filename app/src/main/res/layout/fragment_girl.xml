@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/green_color_less"
+              android:orientation="vertical">
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/refresh_girl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:overlay="false"
+        app:wave_color="@color/red_color_more"
+        app:wave_height_type="normal"
+        app:wave_show="true">
+
+        <com.example.weilong.gankio.ui.view.MainRecyclerView
+            android:id="@+id/recy_fragment_girl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f06"/>
+    </com.cjj.MaterialRefreshLayout>
+</LinearLayout>

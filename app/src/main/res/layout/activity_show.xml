@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_color_less"
+    android:orientation="vertical"
+    tools:context="com.example.weilong.gankio.ui.activity.ShowActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_color_most"
+        >
+
+        <TextView
+            android:id="@+id/tv_main_tool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tv_show_info"
+            android:textSize="@dimen/tv_head"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/pro_show_progress"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <WebView
+        android:id="@+id/web_show_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_color_much"></WebView>
+</LinearLayout>

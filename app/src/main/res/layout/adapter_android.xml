@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/layout_item"
+                                    android:orientation="vertical"
+                                    app:cardBackgroundColor="@color/green_color_much"
+                                    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_android_who"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textSize="@dimen/tv_who"
+            android:text="发表人"/>
+
+        <TextView
+            android:id="@+id/tv_android_desc"
+            android:background="@drawable/background_press"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_desc"
+            android:layout_below="@+id/tv_android_who"
+            android:textSize="@dimen/tv_desc"
+            android:maxLines="3"
+            android:autoLink="web"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_android_publishAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:textSize="@dimen/tv_who"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

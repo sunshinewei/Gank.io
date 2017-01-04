@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_color_less"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cjj.MaterialRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:overlay="false"
+        app:wave_show="true"
+        app:wave_color="@color/red_color_more"
+        app:wave_height_type="normal"
+        android:id="@+id/refresh_extend">
+    <com.example.weilong.gankio.ui.view.MainRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recy_fragment_extend"></com.example.weilong.gankio.ui.view.MainRecyclerView>
+    </com.cjj.MaterialRefreshLayout>
+</LinearLayout>
