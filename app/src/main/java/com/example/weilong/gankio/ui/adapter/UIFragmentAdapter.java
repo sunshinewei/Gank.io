@@ -5,12 +5,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
 import com.example.weilong.gankio.R;
 import com.example.weilong.gankio.dao.DataList;
 import com.example.weilong.gankio.ui.listener.OnClickListener;
 import com.example.weilong.gankio.ui.listener.OnLongClickListener;
+import com.example.weilong.gankio.utils.MetricUtils;
 
 import java.util.List;
 
@@ -50,6 +52,13 @@ public class UIFragmentAdapter extends RecyclerView.Adapter<UIFragmentAdapter.UI
     @Override
     public void onBindViewHolder(final UIViewHolder holder, int position) {
         DataList.ResultsBean bean = mResultsBeen.get(position);
+        View itemView = holder.itemView;
+        itemView.setTranslationY(MetricUtils.getScrHeight(mContext));
+        itemView.animate()
+                .translationY(0)
+                .setInterpolator(new DecelerateInterpolator(3.f))
+                .setDuration(300)
+                .start();
         holder.mTvUiWho.setText("发表人："+bean.getWho());
         holder.mTvAndroidPublishAt.setText("发表时间： "+bean.getPublishedAt());
         holder.mTvUiDesc.setText(bean.getDesc());

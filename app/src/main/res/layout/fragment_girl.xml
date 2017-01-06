@@ -19,6 +19,7 @@
             android:id="@+id/recy_fragment_girl"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#f06"/>
+            android:background="#f06"
+            android:layoutAnimation="@anim/layout_recycler_animation"/>
     </com.cjj.MaterialRefreshLayout>
 </LinearLayout>

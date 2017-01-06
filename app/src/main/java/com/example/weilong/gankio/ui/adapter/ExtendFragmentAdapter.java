@@ -5,12 +5,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
 import com.example.weilong.gankio.R;
 import com.example.weilong.gankio.dao.DataList;
 import com.example.weilong.gankio.ui.listener.OnClickListener;
 import com.example.weilong.gankio.ui.listener.OnLongClickListener;
+import com.example.weilong.gankio.utils.MetricUtils;
 
 import java.util.List;
 
@@ -53,6 +55,13 @@ public class ExtendFragmentAdapter extends RecyclerView.Adapter<ExtendFragmentAd
     @Override
     public void onBindViewHolder(final ExtendViewHodler holder, int position) {
         DataList.ResultsBean bean = mResultsBeen.get(position);
+        View itemView = holder.itemView;
+        itemView.setTranslationY(MetricUtils.getScrHeight(mContext));
+        itemView.animate()
+                .translationY(0)
+                .setInterpolator(new DecelerateInterpolator(3.f))
+                .setDuration(300)
+                .start();
         holder.mTvExtendDesc.setText(bean.getDesc());
         holder.mTvExtendType.setText("类型： "+bean.getType());
         holder.mTvExtendWho.setText("via "+bean.getWho());

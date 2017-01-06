@@ -19,7 +19,8 @@
 <com.example.weilong.gankio.ui.view.MainRecyclerView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/recy_fragment_android">
+    android:id="@+id/recy_fragment_android"
+    android:layoutAnimation="@anim/layout_recycler_animation">
 </com.example.weilong.gankio.ui.view.MainRecyclerView>
     </com.cjj.MaterialRefreshLayout>
 </LinearLayout>

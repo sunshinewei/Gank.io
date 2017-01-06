@@ -8,6 +8,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -17,6 +18,7 @@ import com.example.weilong.gankio.R;
 import com.example.weilong.gankio.dao.DataList;
 import com.example.weilong.gankio.ui.listener.OnClickListener;
 import com.example.weilong.gankio.ui.listener.OnLongClickListener;
+import com.example.weilong.gankio.utils.MetricUtils;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -58,7 +60,13 @@ private OnLongClickListener mOnLongClickListener;
 
     @Override
     public void onBindViewHolder(final RedioViewHolder holder, final int position) {
-
+        View itemView = holder.itemView;
+        itemView.setTranslationY(MetricUtils.getScrHeight(mContext));
+        itemView.animate()
+                .translationY(0)
+                .setInterpolator(new DecelerateInterpolator(3.f))
+                .setDuration(300)
+                .start();
         DataList.ResultsBean bean = mResultsBeen.get(position);
         Picasso.with(mContext).load(bean.getUrl())
                 .error(R.drawable.icon_video)
