@@ -16,4 +16,9 @@
     <string name="tv_main_toolbar">首页</string>
     <string name="tv_show_info">详情信息</string>
 
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
 </resources>

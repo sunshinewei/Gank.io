@@ -36,6 +36,8 @@
         <activity android:name=".ui.activity.VedioActivity">
         </activity>
 
+
+
         <!--分享Activity-->
         <activity
             android:name="com.mob.tools.MobUIShell"

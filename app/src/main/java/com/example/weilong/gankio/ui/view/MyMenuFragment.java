@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.weilong.gankio.APP_Content;
 import com.example.weilong.gankio.R;
+import com.example.weilong.gankio.ui.dialog.LoginDialog;
 import com.example.weilong.gankio.ui.fragment.AndroidFragment;
 import com.example.weilong.gankio.ui.fragment.ExtendFragment;
 import com.example.weilong.gankio.ui.fragment.FirstFragment;
@@ -29,10 +30,12 @@ import com.mxn.soul.flowingdrawer_core.MenuFragment;
 import com.squareup.picasso.Picasso;
 
 
-public class MyMenuFragment extends MenuFragment {
+public class MyMenuFragment extends MenuFragment implements View.OnClickListener {
     private Context mContext;
     private NavigationView mNavigation;
     private TextView mTextView;
+    private TextView headerView;
+    private ImageView imageHead;
 
     private FragmentManager mFragmentManager;
     private FirstFragment mFirstFragment;
@@ -42,6 +45,7 @@ public class MyMenuFragment extends MenuFragment {
     private RedioFragment mRedioFragment;
     private GirlFragment mGirlFragment;
     private ExtendFragment mExtendFragment;
+    private LoginDialog mLoginDialog;
 
     public MyMenuFragment(Context mContext, FragmentManager fragmentManager,TextView mText) {
         this.mContext = mContext;
@@ -67,26 +71,19 @@ public class MyMenuFragment extends MenuFragment {
                 false);
 
         mNavigation= (NavigationView) view.findViewById(R.id.vNavigation);
-        TextView headerView = (TextView) mNavigation.findViewById(R.id.tv_fragment_head);
         View headView = mNavigation.getHeaderView(0);
-        ImageView imageHead= (ImageView) headView.findViewById(R.id.ivMenuUserProfilePhoto);
+        headerView= (TextView) headView.findViewById(R.id.tv_fragment_head);
+        imageHead= (ImageView) headView.findViewById(R.id.ivMenuUserProfilePhoto);
         if (imageHead!=null) {
             Picasso.with(mContext).load(R.drawable.photo)
                     .transform(new CircleTransformation())
                     .into(imageHead);
         }
-//        = (TextView) mNavigation.getHeaderView(R.id.tv_fragment_head);
+        if (headerView!=null && imageHead!=null){
+            headView.setOnClickListener(this);
+            imageHead.setOnClickListener(this);
+        }
         onClickMenu();
-//        if (view!=null){
-//            System.out.println("实例化");
-//        }
-//        ivMenuUserProfilePhoto= (ImageView) view.findViewById(R.id.ivMenuUserProfilePhoto);
-//        if(ivMenuUserProfilePhoto==null){
-//            System.out.println("没有实例化");
-//        }else {
-//            System.out.println("实例化成功");
-//        }
-//        setupHeader();
         return  setupReveal(view) ;
     }
 
@@ -174,8 +171,17 @@ public class MyMenuFragment extends MenuFragment {
 //    public void onOpenMenu(){
 //        Toast.makeText(getActivity(),"onOpenMenu",Toast.LENGTH_SHORT).show();
 //    }
-    public void onCloseMenu(){
-        Toast.makeText(getActivity(),"onCloseMenu",Toast.LENGTH_SHORT).show();
+//    public void onCloseMenu(){
+//        Toast.makeText(getActivity(),"onCloseMenu",Toast.LENGTH_SHORT).show();
+//    }
+
+    @Override
+    public void onClick(View view) {
+       if (view.getId()==R.id.tv_fragment_head || view.getId()==R.id.ivMenuUserProfilePhoto) {
+            mLoginDialog=new LoginDialog(mContext);
+           mLoginDialog.setTitle("登录");
+           mLoginDialog.show();
+       }
     }
 
 }
