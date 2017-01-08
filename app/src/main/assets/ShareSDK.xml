@@ -100,15 +100,15 @@
         SortId="4"
         AppId="wx791bd9ad5f444465"
         AppSecret="d497d08dd3176f39dd5c5553010f6c9c"
-        BypassApproval="false"
+        BypassApproval="true"
         Enable="true" />
     
     <WechatMoments
         Id="5"
         SortId="5"
-        AppId="wx4868b35061f87885"
-        AppSecret="64020361b8ec4c99936c0e3999a9f249"
-        BypassApproval="false"
+        AppId="wx791bd9ad5f444465"
+        AppSecret="d497d08dd3176f39dd5c5553010f6c9c"
+        BypassApproval="true"
         Enable="true" />
         
 	<WechatFavorite

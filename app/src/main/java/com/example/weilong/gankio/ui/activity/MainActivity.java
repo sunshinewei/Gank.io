@@ -35,13 +35,8 @@ public class MainActivity extends GankActivity implements MainView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-
         setContentView(R.layout.activity_main);
         initToolBar();
-//        mRecyMainContent = (MainRecyclerView) findViewById(R.id.recy_main_content);
-//        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,R.layout.tiltle_bar);
-
 
         mFramMain = (FragmentView) findViewById(R.id.fram_main);
         mLeftDrawerLayout = (LeftDrawerLayout) findViewById(R.id.id_drawerlayout);
