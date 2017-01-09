@@ -21,21 +21,22 @@
             android:orientation="vertical"
             >
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar_main"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/red_color_most"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/tv_main_toolbar"
-                    android:gravity="center"
-                    android:textSize="@dimen/tv_head"
-                    android:id="@+id/tv_main_tool"/>
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/red_color_most"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/tv_main_toolbar"
+                            android:gravity="center"
+                            android:textSize="@dimen/tv_head"
+                            android:id="@+id/tv_main_tool"/>
 
-                </android.support.v7.widget.Toolbar>
+                    </android.support.v7.widget.Toolbar>
+
             <!--<com.example.weilong.gankio.ui.view.MainRecyclerView-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="match_parent"-->
