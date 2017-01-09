@@ -42,13 +42,7 @@
 </code></pre>
 
 ##### 实现结果呈现：
-<p>
-![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/ios.gif)
-![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/girl.gif)
-![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/left.gif)
-</p>
-<p>
-![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/login.gif)
-![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/refresh.gif)
-![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/share.gif)
-</p>
+
+![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/ios.gif)![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/girl.gif)![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/left.gif)
+![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/login.gif)![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/refresh.gif)![](https://github.com/sunshinewei/Gank.io/blob/master/cutimage/share.gif)
+
